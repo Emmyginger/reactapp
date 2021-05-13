@@ -1,25 +1,29 @@
-import logo from './logo.svg';
+import logo from './images/logo(2).svg';
+import mockup from "./images/illustration-mockups.svg"
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <>
+      <header>
+        <img src={logo} alt="logo" />
       </header>
-    </div>
+      <main>
+        <img src={mockup} alt="mockup" />
+        <div className="content">
+          <h2>Build the community your fans will love</h2>
+          <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autvel
+          cumque debitis officia labore mollitia eius nam recusandae quisquam
+          eligendi culpa modi?</p>
+          <button>Register</button>
+        </div>
+      </main>
+      <footer>
+      <i class="fab fa-facebook-f"></i>
+      </footer>
+    </>
   );
 }
+
 
 export default App;
